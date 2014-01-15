@@ -17,7 +17,7 @@ static CGFloat KKLoadingIndicatorViewHeight = 20;
 @implementation KKLoadingIndicatorView
 
 
-- (id)initWithLoadingViewStyle:(KKLoadingIndicatorViewStyle)style{
+- (id)initWithLoadingIndicatorStyle:(KKLoadingIndicatorViewStyle)style{
     self = [super initWithFrame:CGRectMake(0, 0, KKLoadingIndicatorViewWidth, KKLoadingIndicatorViewHeight)];
     if (self) {
         UIColor *indicatorColor = [UIColor blackColor];

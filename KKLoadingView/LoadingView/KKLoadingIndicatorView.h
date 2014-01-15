@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, KKLoadingIndicatorViewStyle) {
-    KKLoadingIndicatorViewStyleBlack  = 0,
+    KKLoadingIndicatorViewStyleBlack = 0,
     KKLoadingIndicatorViewStyleWhite = 1
 };
 
 @interface KKLoadingIndicatorView : UIView
 
-- (id)initWithLoadingViewStyle:(KKLoadingIndicatorViewStyle)style;
+- (id)initWithLoadingIndicatorStyle:(KKLoadingIndicatorViewStyle)style;
 
 @end

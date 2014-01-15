@@ -21,7 +21,7 @@ static CGFloat kContainerHeight = 52;
         UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kContainerWidth, kContainerHeight)];
         containerView.backgroundColor = [UIColor clearColor];
         
-        KKLoadingIndicatorView *loadingIndicatorView = [[KKLoadingIndicatorView alloc] initWithLoadingViewStyle:KKLoadingIndicatorViewStyleBlack];
+        KKLoadingIndicatorView *loadingIndicatorView = [[KKLoadingIndicatorView alloc] initWithLoadingIndicatorStyle:KKLoadingIndicatorViewStyleBlack];
         loadingIndicatorView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
         [containerView addSubview:loadingIndicatorView];
         

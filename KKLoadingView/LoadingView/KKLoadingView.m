@@ -26,6 +26,7 @@ static CGFloat kContainerHeight = 52;
         [containerView addSubview:loadingIndicatorView];
         
         UILabel *loadingLabel = [[UILabel alloc] init];
+        loadingLabel.backgroundColor = [UIColor clearColor];
         loadingLabel.textColor = [UIColor colorWithWhite:177/255.0 alpha:1];
         loadingLabel.font = [UIFont systemFontOfSize:16.0];
         loadingLabel.textAlignment = NSTextAlignmentCenter;

@@ -43,7 +43,6 @@ static CGFloat KKLoadingIndicatorViewHeight = 20;
             
             CAKeyframeAnimation *opacityAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
             opacityAnimation.removedOnCompletion = NO;
-            opacityAnimation.removedOnCompletion = NO;
             opacityAnimation.beginTime = beginTime + 0.1 * i;
             opacityAnimation.duration = 0.7;
             opacityAnimation.repeatCount = HUGE_VALF;

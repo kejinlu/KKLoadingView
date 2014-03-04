@@ -10,4 +10,6 @@
 
 @interface KKLoadingView : UIView
 
+@property (nonatomic, strong) UILabel *loadingLabel;
+
 @end

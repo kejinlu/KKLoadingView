@@ -25,15 +25,15 @@ static CGFloat kContainerHeight = 52;
         loadingIndicatorView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
         [containerView addSubview:loadingIndicatorView];
         
-        UILabel *loadingLabel = [[UILabel alloc] init];
-        loadingLabel.backgroundColor = [UIColor clearColor];
-        loadingLabel.textColor = [UIColor colorWithWhite:177/255.0 alpha:1];
-        loadingLabel.font = [UIFont systemFontOfSize:16.0];
-        loadingLabel.textAlignment = NSTextAlignmentCenter;
-        loadingLabel.text = @"Loading";
-        [loadingLabel sizeToFit];
-        loadingLabel.frame = CGRectMake(0, kContainerHeight - CGRectGetHeight(loadingLabel.frame), kContainerWidth, CGRectGetHeight(loadingLabel.frame));
-        [containerView addSubview:loadingLabel];
+        _loadingLabel = [[UILabel alloc] init];
+        _loadingLabel.backgroundColor = [UIColor clearColor];
+        _loadingLabel.textColor = [UIColor colorWithWhite:177/255.0 alpha:1];
+        _loadingLabel.font = [UIFont systemFontOfSize:16.0];
+        _loadingLabel.textAlignment = NSTextAlignmentCenter;
+        _loadingLabel.text = @"Loading";
+        [_loadingLabel sizeToFit];
+        _loadingLabel.frame = CGRectMake(0, kContainerHeight - CGRectGetHeight(_loadingLabel.frame), kContainerWidth, CGRectGetHeight(_loadingLabel.frame));
+        [containerView addSubview:_loadingLabel];
         
         containerView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
         containerView.center = CGPointMake(CGRectGetWidth(self.bounds)/2.0, CGRectGetHeight(self.bounds)/2.0);

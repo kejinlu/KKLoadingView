@@ -78,9 +78,9 @@ static CGFloat KKLoadingIndicatorViewHeight = 20;
                                      ];
             
             transformAnimation.values = @[
-                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 0.0)],
-                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.25, 0.0)],
-                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 0.0)]
+                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)],
+                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.25, 1.0)],
+                            [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]
                             ];
             
             [layer addAnimation:transformAnimation forKey:@"transformAnimation"];
